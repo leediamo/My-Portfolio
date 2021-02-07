@@ -61,9 +61,11 @@ main{
     font-size: 48px;
 }
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    margin-left: -20px;
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
     float: right;
 }
 .header div ul {
@@ -71,16 +73,8 @@ main{
 }
 .header div ul li {
     display: inline-block;
-  
 }
-.body{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+.content{
 
-  .content{
-   
 
   }
