@@ -4,11 +4,11 @@
     </div>
     <!--Nav Bar-->
     <ul class="nav-links">
-        <li><a href="#work">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
         <!--Add dropdown list (Websites, Photos, Video)-->
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
     <!--Nav bar icon for mobile-->
     <div class="burger">
@@ -17,7 +17,7 @@
         <div class="line3"></div>
     </div>
 </nav>
-<div class="carousel"></div>
+<div id="about" class="carousel"></div>
 
 <main>
     <section id="work" class="service">
@@ -25,14 +25,32 @@
             <h2>Work<br> </h2>
         </div>
         <ul class="subheader-links">
-            <li><a href="#">Coding</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Videos</a></li>
+            <li><a data-tab-target="#coding" class="active tab">Coding</a></li>
+            <li><a data-tab-target="#photos" class="tab">Photography</a></li>
+            <li><a data-tab-target="#video" class="tab">Videography</a></li>
         </ul>
+
+        <div class="tab-content">
+            <div id="coding" data-tab-content class="active">
+                <ul class="coding-links">
+                    <li><a </a></li>
+                    <li><a </a></li>
+                    <li><a </a></li>
+                </ul>
+            </div>
+
+            <div id="photos" data-tab-content>
+                <p>Some information on pricing</p>
+            </div>
+            <div id="video" data-tab-content>
+                <p>Let me tell you about me</p>
+            </div>
+        </div>
     </section>
+
     <section id="contact" class="service">
         <div class="logo2">
-        <h2>Contact</h2>
+            <h2>Contact</h2>
         </div>
         <p class="para">
             Phone Number: 313-515-0615<br>
@@ -41,9 +59,9 @@
         </p>
     </section>
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
+        <h2> ❤️️ by Diamond Lee</h2>
         <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
+            &copy; 2021 We In Dis!
         </p>
     </footer>
 
